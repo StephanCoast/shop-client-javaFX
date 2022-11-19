@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<?import com.jfoenix.controls.JFXButton?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
+      fx:controller="shop.controller.BookingsController">
+    <HBox>
+        <MaterialIconView glyphName="VIEW_LIST"></MaterialIconView>
+        <Label styleClass="subtitle">Buchungen</Label>
+    </HBox>
+    <ScrollPane hbarPolicy="NEVER">
+        <TableView fx:id="bookingsTable" styleClass="table-view" prefHeight="240">
+            <columns>
+                <TableColumn fx:id="bookingsTableBookingDate" text="Buchungsdatum">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="bookingDate"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="bookingsTableProduct" text="Produkt">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="productTitle"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="bookingsTablePrice" text="Preis">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="bookingPrice"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn fx:id="bookingsTableDeleteBooking">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="id"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </ScrollPane>
+    <JFXButton onAction="#refreshAction" text="REFRESH" styleClass="button-raised"></JFXButton>
+</VBox>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.materialicons.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="96.0" prefWidth="135.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shop.controller.LoginController">
+    <HBox>
+        <MaterialIconView glyphName="LOCK" />
+        <Label styleClass="subtitle">Anmelden</Label>
+    </HBox>
+    <JFXTextField fx:id="username" promptText="Username" styleClass="input">Bob</JFXTextField>
+    <JFXPasswordField fx:id="password" promptText="Passwort" styleClass="input">secret</JFXPasswordField>
+    <JFXButton onAction="#loginAction" styleClass="button-raised" text="LOGIN" />
+    <Label fx:id="loginFailure" text="Login fehlgeschlagen!" visible="false">Login fehlgeschlagen!</Label>
+</VBox>

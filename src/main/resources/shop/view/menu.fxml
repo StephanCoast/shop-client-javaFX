@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXListView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<JFXListView fx:id="menu" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"
+             fx:controller="shop.controller.MenuController" onMouseClicked="#menuAction">
+    <HBox fx:id="catalog" alignment="CENTER_LEFT">
+        <MaterialIconView glyphName="SHOPPING_CART"></MaterialIconView>
+        <Label>Produktkatalog</Label>
+    </HBox>
+    <HBox fx:id="bookings" alignment="CENTER_LEFT">
+        <MaterialIconView glyphName="VIEW_LIST"></MaterialIconView>
+        <Label>Buchungen</Label>
+    </HBox>
+    <HBox fx:id="logout" alignment="CENTER_LEFT">
+        <MaterialIconView glyphName="EXIT_TO_APP"></MaterialIconView>
+        <Label>Logout</Label>
+    </HBox>
+</JFXListView>

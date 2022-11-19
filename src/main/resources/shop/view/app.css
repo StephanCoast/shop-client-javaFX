@@ -1,0 +1,120 @@
+#drawersStack {
+    -fx-background-color: white;
+}
+
+#header {
+    -fx-padding: 10 20;
+    -fx-background-color: #303f9f;
+}
+
+#title {
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-alignment: center;
+    -fx-max-width: infinity;
+}
+
+#viewHolder {
+    -fx-padding: 10 30;
+}
+
+.glyph-icon {
+    -glyph-size: 24;
+}
+
+#menuBtn {
+    -fx-text-fill: white;
+    -fx-fill: white;
+    -fx-cursor: hand;
+    -fx-padding: 10;
+}
+
+.button-raised {
+    -fx-padding: 8 20;
+    -fx-font-size: 14;
+    -jfx-button-type: RAISED;
+    -fx-background-color: #e91e63;
+    -fx-text-fill: white;
+}
+
+.input {
+    -fx-max-width: 200;
+}
+
+#loginFailure {
+    -fx-text-fill: #cc0000;
+    -fx-font-size: 16;
+}
+
+.subtitle, #menu Label {
+    -fx-font-size: 18;
+    -fx-padding: 0 0 0 8;
+}
+
+VBox {
+    -fx-spacing: 20;
+}
+
+.root {
+    -fx-focus-color: transparent;
+}
+
+.product {
+    -fx-padding: 8;
+    -fx-spacing: 5;
+    -fx-background-color: #eeeeee;
+}
+
+.product .desc {
+    -fx-font-size: 10;
+    -fx-text-fill: #999999;
+    -fx-max-width: 240;
+    -fx-spacing: 5;
+    -fx-wrap-text: true;
+}
+
+#menu HBox, .deleteBtn {
+    -fx-cursor: hand;
+}
+
+.deleteBtn:hover {
+    -fx-text-fill: #e91e63;
+    -fx-fill: #e91e63;
+}
+
+ScrollPane, ScrollPane > .viewport, FlowPane {
+    -fx-background-color: transparent;
+}
+
+.bold {
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+}
+
+JFXButton {
+    -fx-text-fill: #e91e63;
+}
+
+.table-view {
+    -fx-border-width: 0;
+    -fx-background-insets: 0;
+}
+
+.table-row-cell:empty {
+    -fx-background-color: white;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0;
+}
+
+.table-column {
+    -fx-alignment: CENTER;
+}
+
+.table-view .scroll-bar:horizontal .increment-arrow,
+.table-view .scroll-bar:horizontal .decrement-arrow,
+.table-view .scroll-bar:horizontal .increment-button,
+.table-view .scroll-bar:horizontal .decrement-button {
+    -fx-padding: 0;
+}
